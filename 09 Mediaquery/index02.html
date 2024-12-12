@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            overflow: hidden;
+            width: 80%;
+            border: 1px solid #777;
+            margin: 0 auto;
+        }
+        /* float 속성까지는 공통적용이므로 그냥 씀 */
+        .container div {
+            text-align: center;
+            float: left;
+        }
+        /* 브라우저 크기별로 바꾸고 싶은 속성(여기서는 큰박스 내 float되는 박스갯수)을
+        원하는 미디어버전의 개수만큼 만들면 됨 
+        각각의 상황에 따라서 클래스네임을 따로 부여한 다음에 바디태그에 다 때려넣으면 됨*/
+        @media(min-width: 1240px) {
+            .container .col-lg-6 {
+                box-sizing: border-box;
+                width: 16.66%;
+        }
+        }
+        /* 범위의 중간값은 (민: 뭐뭐) and (맥스: 뭐뭐) 로 표기 */
+        @media(min-width: 766px) and (max-width: 1240px) {
+            .container .col-md-4 {
+                box-sizing: border-box;
+                width: 25%;
+        }
+        }
+        @media(max-width: 766px) {
+            .container .col-sm-2 {
+                box-sizing: border-box;
+                width: 50%;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>미디어 쿼리 박스</h3>
+    
+    <p>웹에 박스 6개, 태블릿 4개, 모바일 2개 배치</p>
+    
+
+    <div class="container">
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+        <div class="col-lg-6 col-md-4 col-sm-2">박스</div>
+
+
+    </div>
+
+</body>
+</html>

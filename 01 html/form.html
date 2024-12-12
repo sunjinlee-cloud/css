@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form태그 연습</title>
+</head>
+<body>
+    
+    <!-- form태그는 사용자가 입력한 값을 받아 서버에 전송할 때 사용한다 
+     size는 몇바이트 들어갈건지. placeholder: 입력칸 안에 회색글씨로 안내
+     type number는 숫자만 입력가능 -->
+    <form action="">
+        <h3>회원 가입 양식</h3>
+        <hr>
+        아이디 <input type="text", size="20", placeholder="아이디를 입력하세요", name="userid">
+        <br>
+        비밀번호 <input type="password", name="userpassword">
+        <br>
+        생년월일 <input type="date", name="birthdate">
+        <br>
+        숫자만 입력 <input type="number", name="allo">
+        <br>
+        <!-- radio는 한개만 선택가능. checkbox는 중복선택 가능 
+        checkbox나 radio속성은 동일한 name을 지정해서 반드시 하나의 그룹으로 묶어야 한다.
+         만약 radio 에 같은 name을 지정해주지 않으면 radio로(한개만선택) 기능안함. -->
+        관심 분야 <br>
+        <input type="checkbox", name="field"> Java
+        <input type="checkbox", name="field"> CSS
+        <input type="checkbox", name="field"> HTML
+        <input type="checkbox", name="field"> JS
+        <br>
+        <!-- alt + 클릭하면 커서 여러개 생김. 여러태그를 한번에 고치거나, 작성할때-->
+        전공 <br>
+        <input type="radio", name="major"> 경영
+        <input type="radio", name="major"> 기공
+        <input type="radio", name="major"> 수학
+        <input type="radio", name="major"> 컴공
+        <br>
+        <!-- select태그: 아코디언처럼 아래로 늘어지는 선택리스트. 
+         select 태그 안에 option 태그가 꼭 같이 들어간다. -->
+        지역 <br>
+        <select name="region">
+            <option>서울시</option>
+            <option>부산시</option>
+            <option>인천시</option>
+            <option>울산시</option>
+        </select>
+        <!-- 긴 글을 작성하려면 text area태그를 사용함 -->
+        <br> 자기 소개<textarea rows="20", cols="35", name="introduction">
+        </textarea>
+        <br>
+        <!-- submit버튼은 form태그 내 데이터를 action 속성 내 위치로 전송시킨다. 
+         value는 버튼 내 글씨의 값-->
+        <input type="submit", value="제출하기" name="submit">
+        <input type="reset" value="초기화" name="reset">
+        <input type="button" value="기능없는 버튼">
+
+    </form>
+
+
+
+</body>
+</html>

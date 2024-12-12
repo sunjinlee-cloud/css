@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+    <!-- 제이쿼리는 script 코드로 링크 걸어준다 -->
+    <script src="bootstrap-3.4.1-dist/js/jquery-3.7.1.min.js"></script>
+    <!-- 부트스트랩.js도 링크 걸어줌 -->
+     <script src="bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+     <style>
+        ul, li {list-style-type: none; padding: 0;}
+        div {border: 1px solid #777; border-collapse: collapse;}
+        .container {width: 80%}
+     </style>
+
+</head>
+<body>
+
+    <!-- <h3>버튼 모음</h3>
+
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table> -->
+
+
+      <!-- <h3>입력양식</h3>
+      <form>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input id="email" type="email" class="form-control" name="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon">Text</span>
+          <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+        </div>
+      </form>
+      <h1></h1> -->
+
+      <!-- 그리드(반응형 영역을 잡아주는 기능)
+       1. 반응형이다(웹에선 12칸, 모바일에서 2칸으로 어레인지 가능).
+       2. 규칙: .container나 .containerfluid 아래에 .row 클래스를 넣어준다.
+                이후 .col-xx-xx클래스를 넣어서 영역을 잡아준다.
+         -->
+                <h3>그냥 Container</h3>
+      <div class="container">
+        <!-- 브라우저(lg)에서는 총 6칸으로, 
+         브라우저 환경(sm)에서는 총 4칸으로, 모바일은 총 2칸으로 잡을 때 -->
+        <div class="row">
+            <div class="col-lg-2 col-sm-3 col-xs-6">1</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">2</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">3</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">4</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">5</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">6</div>
+        </div>
+      </div>
+
+      <br>
+      <!-- containerfluid는 전체 화면을 다 사용한다.
+       하지만 container도 그냥 width 값으로 너비지정 가능 -->
+       <h3>Containerfluid</h3>
+      <div class="containerfluid">
+        <div class="row">
+            <div class="col-lg-2 col-sm-3 col-xs-6">1</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">2</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">3</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">4</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">5</div>
+            <div class="col-lg-2 col-sm-3 col-xs-6">6</div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- 모바일에서 2칸, 태블릿에서 3칸, pc에서 6칸 
+       참고로 ul, li에는 좌측에 패딩 들어가 있음. 
+       그래서 일반 div로 박스만들었을 때보다 우측으로 밀려보임-->
+      <h3>그냥 Container</h3>
+      <div class="container">
+        <ul class="row">
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">1 </li>
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">2</li>
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">3</li>
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">4</li>
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">5</li>
+            <li class="col-lg-2 col-md-2 col-sm-4 col-xs-6">6</li>
+        </ul>
+      </div>
+
+     <br><br>
+     <!-- 모바일 1칸, 태블릿 4칸, 웹 6칸 짜리 -->
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">1</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">2</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">3</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">4</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">5</div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">6</div>
+        </div>
+      </div>
+
+      <br><br><br><br><br><br>
+
+</body>
+</html>

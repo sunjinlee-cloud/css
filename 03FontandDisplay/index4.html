@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap .inner {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+           /* display inline : 가로 배치 => 블럭요소를 인라인 요소로 바꿔줌 
+           인라인 요소처럼 되어버렸으므로 너비, 높이 요소는 반영이 안됨*/
+            display : inline;
+        }
+        .wrap span {
+            /* display block :  인라인 요소를 블럭요소처럼 바꿔줌 */
+            display : block;
+        }
+        .box div {
+            /* display inline-block : 블럭요소가 인라인요소처럼 들어갔으나,
+             블럭요소처럼 박스 너비 지정, align 태그 사용 등 블럭요소에만
+             적용되는 속성을 사용 가능하다*/
+            display: inline-block;
+            border: 1px solid black;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+                }
+        ul, li {list-style: none; padding: 0; margin: 0;}
+        .gnb {
+            text-align: center;
+        }
+        .gnb > li {
+            display: inline-block;
+            }
+        .gnb > li > a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 15px;
+            color: black;
+            /* text-decoration : 밑줄 제거 */
+            text-decoration: none;
+        }
+        .gnb > li > a:hover {
+            background-color: darksalmon;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+    <br>
+    <div class="wrap">
+        <span>박스</span>
+        <span>박스</span>
+        <span>박스</span>
+        <br>
+    </div>
+    <div class="box">
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+        <div>인라인블럭</div>
+    </div>
+
+    <!-- 자바스크립트 응용에 사용한다. -->
+    <div class="content" style="display: none;">
+        안보이게 하기
+    </div>
+
+    <ul class="gnb">
+        <li> <a href="0">메뉴</a></li>
+        <li> <a href="0">메뉴</a></li>
+        <li> <a href="0">메뉴</a></li>
+        <li> <a href="0">메뉴</a></li>
+        <li> <a href="0">메뉴</a></li>
+    </ul>
+
+</body>
+</html>

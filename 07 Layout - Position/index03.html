@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+
+        header {position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            background-color: aliceblue;
+        }
+
+        ul, li {list-style: none;}
+        .logo {text-align: center;}
+        .menu {text-align: center; background-color: aquamarine;}
+        .menu > ul > li {
+            display: inline-block;
+        }
+        section {height: 2000px; 
+            background-color: yellow; 
+            margin-top: 121.33px;}
+        /* 말려들어간 컨텐츠 영역이 있으므로 
+        마진을 이용해서 컨텐츠 시작을 맞춰줘야 함 */
+        aside {position: fixed;
+        background-color: green;
+        top: 20px;
+        right: 20px;
+        z-index: 10;}
+
+    </style>
+
+
+</head>
+<body>
+    <!-- 포지션이 겹칠 때 우선순위를 지정하는 속성이 z-index 이다.
+     큰 값을 입력할 수록 위로 올라옴 -->
+    <aside>
+        <p>
+            TOP
+        </p>
+    </aside>
+
+    <header>
+        <div class="logo">
+            <img src="img/bgimg.png" alt="fish">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="00">메뉴</a></li>
+                <li><a href="00">메뉴</a></li>
+                <li><a href="00">메뉴</a></li>
+                <li><a href="00">메뉴</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+ 
+
+    <section class="">
+        컨텐츠 영역
+    </section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 연습</title>
+
+    <style>
+        /* hover :  마우스가 닿으면 동작함 */
+        .list > li > a:hover {color: yellow;}
+        /* active : 활성화시(클릭시) 동작함 */
+        .inner:active {color: red;}
+
+        /* ***가상선택자*** */
+        .name:focus {border: 1px solid red; outline: none;}
+        .species {width: 30px; height: 30px;}
+        .species:checked {
+            /* 여기서 appearance : none 은 뭐냐면 
+            html이 원래 가지고 있는 체크박스의 속성
+            (체크시 파란색으로 배경바뀌고 흰색 브이 체크되는것)
+            을 없앤다는 뜻이다. */
+            appearance: none; 
+            border: 1px solid red;
+            background-color: aqua;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <ul class="list">
+        <li>
+            <a href="0">목록</a>
+        </li> 
+        <li>
+            <a href="0">목록</a>
+        </li> 
+        <li>
+            <a href="0">목록</a>
+        </li>
+    </ul>
+
+    <div class="inner">
+        액티브 가상선택자
+    </div>
+
+
+    <!-- checked, focus는 input태그에만 사용한다. -->
+    식물<input type="checkbox" class="species">
+    동물<input type="checkbox" class="species">
+    <input type="text" class="name">
+
+</body>
+</html>

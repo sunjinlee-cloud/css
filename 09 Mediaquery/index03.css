@@ -1,0 +1,121 @@
+* {padding: 0; margin: 0;}
+ul, li {list-style-type: none;}
+a {text-decoration: none;}
+img {height: auto; max-width:100%;}
+/* 웹 디자인 */
+@media(min-width: 767px) {
+    #wrap {
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid #777;
+    }
+    .logo {
+        height: 280px;
+        background: url('images/bg.png');
+    }
+    .logo > h1 {
+        color: yellow;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .gnb {
+        background-color: red;
+    }
+    .gnb ul li{
+        display: inline-block;
+    }
+    .gnb ul li a {
+        display: block;
+        padding: 20px 30px;
+        color: azure;
+    }
+    .gnb ul li a:hover {
+        background-color: #903;
+    }
+    .box {
+        overflow: hidden;
+    }
+    .box .left {
+        box-sizing: border-box;
+        float: left;
+        width: 70%;
+        padding: 20px;
+    }
+    .box .right {
+        width: 30%;
+        float: right;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .box .right img {
+        margin: 5px auto;
+        display: block;
+        width: 100%;
+    }
+    .footer {
+        text-align: center;
+        border: 1px solid #777;
+        background-color: black;
+        color: #ffffff;
+    }
+}
+@media(max-width: 766px) {
+    #wrap {
+        max-width: 380px;
+        margin: 0 auto;
+        border: 1px solid #777;
+    }
+    .logo {
+        background-image: url(images/bg.png);
+        height: 200px;
+    }
+    .logo > h1 {
+        color: yellow;
+        font-size: 25px;
+        padding: 10px;
+    }
+    .gnb {
+        background-color: red;
+    }
+    .gnb ul li a{
+        display: block;
+        text-align: center;
+        color: #ffffff;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .gnb ul li a:hover{
+        background-color: #903;
+    }
+    .box {
+        overflow: hidden;
+    }
+    .box .left {
+        box-sizing: border-box;
+        float: left;
+        width: 100%;
+        padding: 20px;
+    }
+    .box .left h3 {
+        margin: 10px 0;
+    }
+    .box .right {
+        width: 100%;
+        box-sizing: border-box;
+        float: left;
+        text-align: center;
+        padding: 10px;
+    }
+    .box .right img {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+    .footer {
+        text-align: center;
+        border: 1px solid #777;
+        background-color: black;
+        color: #ffffff;
+    }
+}

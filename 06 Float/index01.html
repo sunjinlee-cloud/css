@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float 연습</title>
+
+    <style>
+   
+        .wrap {
+            border: 1px solid #777;
+            width: 800;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        /* .wrap::after {
+            content: 00;
+            display: block;
+            clear: both;
+        } */
+        .wrap .box {
+            float: left;
+            border: 1px solid #777;
+            width: 16.6666%;
+            box-sizing: border-box;
+        }
+        .aaa {
+            border: 1px solid #777;
+            width: 50%;
+            overflow: hidden;
+            list-style-type: none;
+        }
+
+        .aaa .bbb {
+            border: 1px solid #777;
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+
+        }
+
+
+        .content {
+            width: 500px;
+            border: 1px solid#777;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .content .left {
+            border: 1px solid#777;
+            float: left;
+        }  
+        .content .right {
+            border: 1px solid#777;
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- float의 원래 목적은 사진과 글을 옆으로 배치하기 위한 것이었음.
+     그래서 플롯을 적용하면 부모상자가 자식을 담지 못하게 됨. 
+     이때 2가지 문법 중 한가지를 선택해서 해결할 수 있다.
+     
+     1. 부모태그에 가상선택자(:after : 컨텐츠를 담겠다는 뜻)를 주는 방식
+     2. 부모태그에 overflow : hidden을 넣어주는 방식-->
+    <div class="wrap">
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+        <div class="box">상자</div>
+    </div>
+
+    <ul class="aaa">
+        <li class="bbb">상자</li>
+        <li class="bbb">상자</li>
+    </ul>
+    <hr>
+        <div class="content">
+            <div class="left">왼쪽상자</div>
+            <div class="right">오른쪽상자</div>
+        </div>
+
+</body>
+</html>

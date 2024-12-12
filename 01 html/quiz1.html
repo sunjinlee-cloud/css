@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+</head>
+<body>
+    <!-- h3태그는 form태그 안에 넣어도 됨 -->
+    <h3>Emp 정보(이거 테이블임)</h3>
+    <form>
+    <table> 
+        <tr>
+            <td>
+                사원번호 : 
+            </td>
+            <td>
+                <input type="text", name="id">
+            </td>
+        </tr> 
+        <tr>
+            <td>이름 : </td>
+            <td><input type="text", name="name"></td>
+        </tr>
+        <tr>
+            <td>성별 : </td>
+            <td>
+                남자<input type="radio", name="gender">
+                여자<input type="radio", name="gender">
+            </td>
+        </tr>
+        <tr>
+            <td>직업 : </td>
+            <td><input type="text", name="job"></td>
+        </tr>
+        <tr>
+            <td>상사 : </td>
+            <td>
+                <select name="whatissangsa">
+                    <option>7369</option>
+                    <option>7334</option>
+                    <option>7340</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>입사일 : </td>
+            <td><input type="date", name="date"></td>
+        </tr>
+        <tr>
+            <td>급여 : </td>
+            <td><input type="number", name="salary"></td>
+        </tr>
+        <tr>
+            <!-- value태그를 button 뿐만 아니라 여기에 써도 됨(미리 값을 넣어놓는다) -->
+            <td>커미션 : </td>
+            <td><input type="number", value="1000", name="commission"></td>
+        </tr>
+        <tr>
+            <td> 부서번호 </td>
+            <td><select name="teamnumber">
+                <option>10 ACCOUNTING NEWYORK</option>
+                <option>13 ACCOUNTING NEWYORK</option>
+                <option>15 ACCOUNTING NEWYORK</option>
+            </select></td> 
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit", value="저장" name="submit">
+            <input type="reset", value="취소" name="reset"></td>
+            <td></td>
+    </table>
+
+
+    </form>
+    
+</body>
+</html>

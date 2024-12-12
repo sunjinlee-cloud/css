@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물고기 사진+모든 패딩 5px</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        p {text-align: center;
+        font-size: 25px;
+        font-weight: 800;}
+        .outer {
+            box-sizing: border-box;
+            margin: 0 auto;
+            border: 1px solid black;
+            overflow: hidden;
+            width: 60%;
+            padding: 5px;
+        }
+        .outer .mid {
+            float: left;
+            width: 25%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .outer .mid .inner {
+            text-align: center;
+            border: 1px solid black;
+            width: 100%;
+            font-size: 0.9em;
+            font-weight: 900;
+        }
+ 
+    </style>
+
+    <!-- 그리드를 3개 넣음으로서 얻을 수 있는 이점 : 
+     보이지 않는 박스(mid)에도 패딩을 줄 수 있다.
+      -->
+
+</head>
+<body>
+
+    <P>힌트: 그리드는 총 3개,<br>
+        1. 바깥 박스<br>
+        2. border가 없는 박스 float, padding 5px<br>
+        3. 컨텐츠</P>
+    <div class="outer">
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+        <div class="mid">
+            <div class="inner">
+                <img src="img/bgimg.png"><br>
+                모든 패딩 5px
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

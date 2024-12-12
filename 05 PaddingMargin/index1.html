@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding, Margin 1</title>
+
+    <style>
+        body {
+            background-image: url('img/bg_grid.jpg');
+        }
+        .ty {
+            width: 600px; height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+
+            /* 패딩을 주는 방법 : padding 사용. padding-left, right, top등을 따로따로 줄 수도 있고
+            그냥 padding 을 쓰고 속성을 여러 개 줄 수도 있다.
+            속성을 한개만 주면 상하좌우에 적용 */
+             padding: 30px;
+            /*두개만 주는 경우 : 위아래, 좌우 순 */
+             padding: 10px 20px;
+            /*  세개 주는 경우 : 위, 좌우, 아래 순 */
+             padding: 10px 20px 30px;
+            /* 네개 주는 경우 : 위부터 시계방향으로 위, 우, 아래, 좌 */
+            padding: 10px 20px 30px 40px;
+            /* 박스사이징 - 컨텐트박스가 기본값
+            content-box : 크기에 양옆 패딩값+양옆 윤곽이 들어감 
+            border-box : 패딩, 윤곽값을 빼고 내가 위에 적어둔 width, height값만으로 박스크기를 결정*/
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p class="ty">
+        패딩이란<br>
+        윤곽 기준으로 안쪽 여백입니다.
+        박스크기(width + padding양 옆 값 + 양 옆 윤곽(border))
+        <p class="al">패딩은 겹치지 않는다 : <br>
+            박스 안에 박스가 또 있을 경우 패딩은 다 합쳐진다.
+        </p>
+    </p>
+
+
+</body>
+</html>

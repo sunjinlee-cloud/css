@@ -1,0 +1,31 @@
+/* 전역선택자 * : 모든 태그에 다적용됨
+여백을 없애거나 태그의 기본 속성을 지울 때 사용 */
+* {list-style: none;}
+
+b{color: blue;}
+
+/* 열거형(콤마 사용) 으로도 동일한 디자인을 적용 가능하다 */
+strong, small {color: red;}
+
+#unique {color: yellow;}
+.b1 {color: green;}
+
+/* 띄어쓰기도 모든 자식을 전부 선택하는 선택자, 꺾쇄(>) 도 자식을 나타내는 선택자 
+근데 띄어쓰기는 전체 자식을 다 선택하는거고, 꺾쇄는 직계자식만 선택한다
+띄어쓰기, 꺾쇄는 여러개 중복 사용 가능*/
+.abox p {color: darksalmon;}
+.abox ul li p {color: teal;}
+.bbox > p {color :yellowgreen;}
+.bbox > ul > li {color: blueviolet;}
+
+/* 태그 중 특정 속성 가진 태그만 지정할 수도 있음! 
+아래의 경우 인풋태그 중 타입 패스워드인 태그의 배경색을 지정*/
+input[type=password] {background-color: aqua;}
+input[type=date] {color: chocolate;}
+a[href=example] {color: burlywood;}
+
+/* 가상선택자 : :뒤에 붙임 
+:active = 클릭했을 때
+:hover = 마우스가 닿았을 때
+:checked = 체크박스에 체크가 되었을 때
+:focus = 포커스되었을 때*/

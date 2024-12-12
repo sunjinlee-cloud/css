@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('img/bg_grid.jpg');
+        }
+        /* 마진은 보통 상자간 간격을 띄어줄 때 사용한다. 
+        위 상자와 아래 상자의 마진은 겹친다(큰 쪽을 따라간다).
+        속성의 개수가 적용되는 순서는 패딩과 똑같다. 4개의 경우 상-우-하-좌 순서로 시계방향으로 적용*/
+        p {
+            width: 600px; height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+            margin: 10px 20px 30px 40px;
+        }
+
+        /* 상자 자체를 화면 한가운데로 보내야 할 때 margin: 0 auto(위아래는 0, 좌우 자동)를 쓴다. */
+        .you {
+            margin: 0 auto;
+        }
+    </style>
+
+
+</head>
+<body>
+    <p>
+        마진이란?<br>
+        마진은 상자 바깥 여백입니다.<br>
+        마진은 겹칩니다."
+    </p>
+    <p class="you">
+        마진이란?<br>
+        마진은 상자 바깥 여백입니다.<br>
+        마진은 겹칩니다."
+    </p>
+
+
+</body>
+</html>

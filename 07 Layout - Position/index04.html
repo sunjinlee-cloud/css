@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            .reply {
+                border: 1px solid #777;
+                width: 700px;
+                margin: 0 auto;
+                position: relative;
+                padding: 10px;
+            }
+            .reply img {
+                position: absolute;
+                top: 10px; left: 10px;
+                width: 80px;
+            }
+            .reply .content {
+                margin-left: 90px;
+                overflow: hidden;
+            }
+            .content textarea {
+                width: 100%; min-height: 150px;
+                box-sizing: border-box;
+                padding: 10px;
+                resize: none;
+                /* textarea 박스 크기를 고정시키는 속성 : resize */
+            }
+            .content .left {
+                float: left;
+            }
+            .content .left input {
+                display: block;
+                padding: 2px;
+            }
+            .content .right {
+                float: right;
+                margin-top: 1em;
+            }
+        </style>
+</head>
+<body>
+    
+    <div class="reply">
+        <img src="img/bgimg.png" alt="image">
+        <div class="content">
+            <textarea></textarea>
+            <div class="left">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button class="right">등록</button>
+        </div>
+    </div>
+
+</body>
+</html>

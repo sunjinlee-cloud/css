@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자</title>
+
+    <link rel="stylesheet" href="index2.css">
+
+</head>
+<body>
+    
+     <!-- 선택자
+        * : html내의 모든 태그를 의미함
+        아이디 : id속성으로 묶은 태그들(#id)만 의미
+        id의 경우 한개만 지정 가능(고유함)
+        클래스 : 클래스 속성으로 묶은 태그(.class)들만 의미
+        class의 경우 중복지정 가능 -->
+
+    <!-- 선택자 연습 -->
+     <b>태그선택자</b>
+
+    <strong>다중선택자</strong>
+    <small>다중선택자</small>
+
+    <br>
+ 
+    <p id="unique">아이디 선택자</p>
+    <p class="b1">클래스 선택자</p>
+    <span class="b1">클래스 선택자</span>
+
+
+    <div class="abox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+            <li>하위선택자</li>
+        </ul>
+    </div>
+
+    <div class="bbox">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>
+            <li><p>하위선택자</p></li>
+            <li><p>하위선택자</p></li>
+
+        </ul>
+    </div>
+
+    <input type="password">
+    <input type="date">
+    <input type="text">
+
+    <a href="example">이동</a>
+
+</body>
+</html>

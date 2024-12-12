@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- table 태그 : 행렬을 나타내는 표를 작성하는 태그 
+        tr은 행, td는 열 => tr안에서 td를 정의한다. 
+        border는 테이블의 윤곽선을 나타냄 -->
+    <table border="1">
+        <tr>
+            <td>이름</td>
+            <td>나이</td>
+            <td>주소</td>
+            <td>성별</td>
+            <td rowspan="4">비고</td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>20</td>
+            <td>서울</td>
+            <td>남자</td>
+                
+        </tr>
+        <tr> 
+            <td>홍길연</td>
+            <td>21</td>
+            <td>서울</td>
+            <td>여자</td>
+                
+        </tr>
+        <!-- colspan : 테이블 셀(열) 병합하는 태그, rowspan : 행 병합태그 
+         " " 안에 몇 칸을 병합할건지 쓰면 됨-->
+        <tr>
+            <td colspan="4">결과</td>
+        
+        </tr>
+    </table>
+
+
+</body>
+</html>

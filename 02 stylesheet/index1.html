@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1. 외부 스타일 시트 : CSS파일을 받으려면 link + tab 사용 
+     CSS파일은 여러 개 들어갈 수도 있음.
+     만약 중복이 생긴다면 마지막 속성이 반영됨-->
+    <link rel="stylesheet" href="index1.css">
+
+    <!-- 2. 내부 스타일 시트는 style태그를 파일에 선언하는 방법
+     만약 중복이 생긴다면 마지막 속성이 반영됨
+     (현재 마지막으로 쓰인게 노란색이므로 노란색 적용) -->
+     <style>
+        p {color: yellow;}
+        span {color: blue;}
+     </style>
+
+</head>
+<body>
+    
+    <!-- 외부 스타일 시트 : CSS파일을 만들고 html파일에서 참조 받는 형태 -->
+    <p style="font-weight: bold;">CSS디자인</p>
+    <span>허허허</span>
+
+    <!-- 3. 인라인 시트 : 종류가 같은 태그들 중에서 
+     특정한 놈들만 다른 속성을 부여하고 싶을 때 인라인시트에서 style태그 사용하면
+     우선적으로 적용된다.
+     세미콜론 주의!!!!! -->
+     <p style="color : orange; font-size: 25px;">얘는 오렌지색</p>
+
+
+</body>
+</html>
+
+
+<!-- 단위 : 
+%는 부모영역ㅇㅔ 대한 퍼센트
+em은 주로 글씨크기에 쓰임.
+ vh는 보여지는 화면크기에 대한 비율 : 100vh다-> 전체화면(기본값) -->
+

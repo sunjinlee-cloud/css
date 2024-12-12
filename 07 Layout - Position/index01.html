@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+            position: relative;
+        }
+        p {height: 50px;}
+        .inner1 {background-color: aqua; }
+        .inner2 {background-color: yellow;
+            /* absolute를 써주면 
+            1. left, right 와 top, bottom 중 하나씩을 사용하여 상하좌우로
+            움직일 수 있다. 즉 화면 상 아무데나 원하는 곳에 배치가 가능
+            2. 부모 중 relative 기준(없으면 body 기준)으로 움직인다.*/
+            position: absolute; 
+            right: 30px;
+            bottom: 30px;}
+        .inner3 {background-color: green;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+
+</body>
+</html>

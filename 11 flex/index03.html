@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box {
+                background-color: darkseagreen; padding: 10px; height: 100px;
+        }
+        .box > .item {
+            background-color: darkcyan; 
+            border: 1px solid red;
+        }
+        .container {
+            display: flex; 
+        }
+        /* 박스 width가 지정되어 있으면 shrink 에 영향을 준다 */
+        .item1 {
+            /* flex-grow: 1; flex-shrink: 3; */
+            /* flex-basis: 33%; 기본 너비 - auto가 기본값, width나 height 대신 사용가능 */
+            /* 세개 합쳐서 쓸수도 있음 : grow shrink basis 순서 */
+            flex: 1 2 25%;
+            order: 3;
+            align-self: end;
+        }
+        .item2 {
+            /* flex-grow: 2; flex-shrink: 2; */
+            /* flex-basis: 23%; */
+            flex: 2 2 25%;
+            order: 2;
+        }
+        .item3 {
+            /* flex-grow: 3; flex-shrink: 3; */
+            /* flex-basis: 13%; */
+            flex: 3 1 15%;
+            order: 1;
+        }
+        .item4 {
+            /* flex-grow: 1; flex-shrink: 4; flex-basis: 31%; */
+            flex: 4 4 35%;
+            order: 0;
+        }
+    </style>
+
+</head>
+  
+
+<body>
+
+    <div class="container box">
+        <div class="item item1">hello</div>
+        <div class="item item2">world</div>
+        <div class="item item3">flexflex</div>
+        <div class="item item4">hello</div>
+     </div>
+    
+</body>
+</html>

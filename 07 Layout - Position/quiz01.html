@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="quiz01.css">
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <img class="logo" src="images/logo.jpg" alt="">
+        </div>
+    </header>
+
+    <aside class="floating">
+        <p>TOP</p>
+    </aside>
+    <nav class="menu">
+        <ul>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </nav>
+    <article>
+        <ul class="slide">
+            <li>
+                <img src="images/item01.png" alt="item1">
+                <p>iPhone(디스플레이 or 플롯)</p>
+            </li>
+            <li>
+                <img src="images/item02.png" alt="item2">
+                <p>iPod</p>
+            </li>
+            <li>
+                <img src="images/item03.png" alt="item3">
+                <p>iPad</p>
+            </li>
+            <li>
+                <img src="images/item04.png" alt="item4">
+                <p>iMac</p>
+            </li>
+        </ul>
+
+    </article>
+
+    <!-- sticky는 특정 높이에 도달하기 전까지 position static처럼
+     동작하다가 설정된 위치에 다다르면 fixed처럼 동작
+     
+     1. sticky는 top, bottom, left, right 속성 중 하나를 반드시
+     필수로 지정해야함
+     2. top 속성에는 fixed 되는 지점을 기록함
+     3. 부모 속성에 overflow 속성이 있으면 안됨-->
+
+    <article class="submenu">
+        <ul>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+            <li><a href="">메뉴</a></li>
+        </ul>
+    </article>
+
+
+    <section>
+        <div class="content">
+            <img src="images/ipad.jpg" alt="mainimage">
+        </div>
+        <aside class="left">
+            <div class="a123">
+                <img src="images/side01.png" alt="side01"><br>
+                <img src="images/side02.png" alt="side02">
+            </div>
+        </aside>
+        <aside class="right">
+            <img src="images/side03.png" alt="side03"><br>
+            <img src="images/side04.png" alt="side04">
+        </aside>
+    </section>
+    
+</body>
+</html>

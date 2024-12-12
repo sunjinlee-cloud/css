@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {border: 1px solid black;
+            width: 300px;
+            height: 100px;
+            /* overflow-x나 -y는 x축이나 y축에만 스크롤 달아주는 거 */
+            overflow: auto;
+            /* letter-spacing 은 자간이고, 기본값은 0 */
+            letter-spacing: -1px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 박스보다 내용물이 더 많아서 텍스트가 박스를 넘어갈 때 
+     visible은 기본값
+     scroll은 무조건 스크롤을 만듦(내용물이 넘치지 않더라도). 
+     auto는 텍스트가 넘치는 경우에만 스크롤을 달아준다.
+     hidden은 넘치는 부분이 화면에 나오지 않음(스크롤해도 안보인다).
+     -->
+    <h3>Overflow속성</h3>
+    
+    <p>Su capa es muy variada: pueden ser de un solo color, de dos colores, 
+        como blanco y negro, blanco y naranja, pardo y blanco o gris y blanco. 
+        Pueden tener un patrón de colores atigrado (gatos romanos). 
+        También pueden tener un patrón de color siamés con colores más oscuros 
+        en la cara, rabo, patas y orejas. Pueden tener un manto carey, 
+        siendo de color negro casi todo el cuerpo con motitas pequeñas 
+        o con algunas manchas más grandes en algunas zonas de color naranja 
+        o miel. O bien pueden tener tres colores combinados, 
+        como, por ejemplo, blanco, negro y naranja.</p>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1주차 과제</title>
+
+    <style>
+        * {padding: 0; margin: 0;}
+        header {
+            text-align: center;
+            background-image: url(images/bg.png);
+            background-repeat: repeat;
+        }
+        header .logo {
+            margin: 20px auto;
+        }
+        header .top {
+            display: inline-block;
+            width: 50px; height: 50px; background-color: #c13333;
+            color: #001f7c;
+            line-height: 50px;
+            text-align: center;
+            position: fixed; top: 40px; right: 40px;
+            font-size: 0.8em;
+        }
+        .nav_menu {
+            text-align: center;
+            background-color: black;
+        }
+        .nav_menu .menu {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            background-color: black;
+            font-weight: 800;
+            padding: 20px;
+        }
+        .nav_menu .menu:hover {
+            background-color: #7c7d80;
+        }
+        .nav_item {
+            text-align: center;
+            margin: 20px auto;
+        }
+        .nav_item .item {
+            max-width: 100%;
+            display: inline-block;
+            padding: 20px 30px;
+        }
+        .nav_icon {
+            text-align: center;
+            position: sticky;
+            background-color: white;
+            top: 0;
+            height: auto;
+            margin: 20px;
+            z-index: 10;
+        }
+        .nav_icon .icon {
+            display: inline-block;
+            padding: 10px;
+        }
+        .main {
+            text-align: center;
+            background-image: url(images/bg.png);
+            background-repeat: repeat;
+        }
+        .main .article {
+            display: inline-block;
+            background-image: url(images/bg.png);
+            background-repeat: repeat;
+            position: relative;
+        }
+        .main .article .asideleft {
+            display: inline-block;
+            position: absolute;
+            left: -220px;
+        }
+        .main .article .asideright {
+            display: inline-block;
+            position: absolute;
+            right: -220px;
+        }
+        .side {
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <img src="images/logo.jpg" class="logo">
+        <aside class="top">
+            <div class="fuck"><a href="">TOP</a></div>
+            
+        </aside>
+    </header>
+
+    <nav class="nav_menu">
+        <a href="" class="menu">메뉴1</a>
+        <a href="" class="menu">메뉴1</a>
+        <a href="" class="menu">메뉴1</a>
+        <a href="" class="menu">메뉴1</a>
+
+    </nav>
+    <nav class="nav_item">
+        <div class="item">
+            <img src="images/item01.png"><br>
+            iPhone(디스플레이 or 플롯)
+        </div>
+        <div class="item">
+            <img src="images/item02.png"><br>
+            iPod
+        </div>        
+        <div class="item">
+            <img src="images/item03.png"><br>
+            iPad
+        </div>        
+        <div class="item">
+            <img src="images/item04.png"><br>
+            iMac
+        </div>
+    </nav>
+    <nav class="nav_icon">
+        <p class="icon">아이콘</p>
+        <p class="icon">아이콘</p>
+        <p class="icon">아이콘</p>
+        <p class="icon">이거는 스티키</p>
+    </nav>
+
+    <main class="main">
+        <article class="article">
+            <img src="images/ipad.jpg">
+            <aside class="asideleft">
+                <img src="images/side01.png" class="side"><br>
+                <img src="images/side02.png"><br>
+                이거는 포지션
+            </aside>
+            <aside class="asideright">
+                <img src="images/side03.png"class="side"><br>
+                <img src="images/side04.png"><br>
+                이거는 포지션
+            </aside>
+        </article>
+    </main>
+
+
+</body>
+</html>

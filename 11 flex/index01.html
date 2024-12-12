@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: darkseagreen; padding: 10px;
+        }
+        .box > .item {
+            background-color: darkcyan; width: 50px; height: 50px;
+        }
+        /* 컨테이너 박스가 블럭처럼 배치된다 */
+        .container {display: flex;}
+
+        .container2 {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .container3 {
+            display: flex;
+            /* flex-direction: row; */
+            /* nowrap : 줄바꿈하지 않는다. wrap : item의 줄바꿈 기능*/
+            /* flex-wrap: wrap; */
+            /* flex-flow는 direction과 wrap을 한번에 작성, direction wrap 순서로 적는다. */
+            flex-flow: row wrap;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- FLEX는 바깥을 감싸는 container, 배치되는 요소 item으로 구분된다. 
+     container에 적용하는 속성은 display : flex / inline-flex
+     item에 적용되는 속성은 flex-direction : row, column
+     (쓰기는 컨테이너박스 자리에 씀) -->
+     
+     <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+     </div>
+     <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+     </div>
+
+     <hr>
+     <h3>Flex Direction : 아이템의 배치 방향</h3>
+     <div class="container2 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+     </div>
+
+     <hr>
+     <h3>Flex-wrap(더 이상 공간이 없을 때 컨테이너의 줄바꿈 설정)</h3>
+     <div class="container3 box">
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+        <div class="item">hello</div>
+        <div class="item">world</div>
+        <div class="item">flex</div>
+     </div>
+
+    
+</body>
+</html>
