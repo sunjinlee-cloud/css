@@ -114,18 +114,239 @@ header .wrap .mid fieldset button {
     font-weight: bold;
     color: black;
 }
+article {
+    width: 1008px;
+    padding-top: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+article .newalbum {
+    font-weight: 500;
+}
+article .articleleft {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+}
+.albums {
+    width: 33.3%;
+    float: left;
+    background-image: url(img_melon/list1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.albums > .lmj {
+    display: inline-block;
+    height: 156px;
+    width: 156px;
+    position: relative;
+}
+.albums > .lmj > p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: rgb(43, 42, 42);
+}
+.albums > .jsg {
+    height: 156px;
+    width: 156px;
+    background-color: black;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 0; left: 0;
+}
+.albums > .jsg > p {
+    color: white;
+    font-size: 12px;
+    margin-top: 15px;
+    padding: 20px;
+}
+.jsg:hover {
+    opacity: 0.8;
+    z-index: 1;
+}
+
+article .articleright {
+    float: right;
+    box-sizing: border-box;
+    width: 50%;
+    overflow: hidden;
+    height: 350px;
+}
+.zia {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.zia > a {
+    background-image: url(img_melon/slide01.png);
+    background-repeat: no-repeat;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.login {
+    float: right;
+    height: 150px;
+    width: 50%;
+    height: 130px;
+    box-sizing: border-box;
+    margin: 5px auto;
+}
+.login > div {
+    box-sizing: border-box;
+    border: 1px solid #c7c4c4;
+    float: right;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.loginleft {
+    margin-top: 20px;
+    float: left;
+    color: #999;
+}
+.loginright {
+    margin-top: 20px;
+    float: right;
+    color: #999;
+}
+.loginbutton {
+    border: 1px solid #64b66e;
+    background-color: #64b66e;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.promotion {
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+}
+.promotion > a {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
 section {
     width: 1008px; 
     margin: 0 auto;
 }
 section .img {margin: 10px auto;}
-.sec2 .nav_bottom {
+.sec1 {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.issue {
+    width: 70%;
+    float: left;
+}
+.issuehead {
+    border-bottom: 1px solid black;
+    margin: 10px auto;
+}
+.issuehead h4 {
+    display: inline-block;
+}
+.issuehead h6 {
+    display: inline-block;
+    color: #999;
+}
+.issuebody {
     overflow: hidden;
 }
-.sec2 .nav_bottom .ul {
-    display: inline-block;
-    float: right;
+.issuebody a {
+    float: left;
+    width: 33.3%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-.sec2 .nav_bottom .ul li a {
+.line1 {color: black; font-size: 15px;}
+.line2 {color: #999;}
+.line3 {display: inline-block; color: #64b66e;font-size: 10px;}
+.line4 {display: inline-block; color:#999;font-size: 10px;}
+
+.notice {
+    overflow: hidden;
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #636363;
+}
+.notice ul {
+    float: left;
+    font-size: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.notice ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.sec2 .nav_bottom {
+    overflow: hidden;
+    border-bottom: 1px solid #b6b5b5;
+}
+.sec2 .nav_bottom ul {
+    float: right;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+}
+.nav_bottom ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.sec2 .nav_bottom ul li a {
     color: #636363;
+}
+.termsofuse {
+    overflow: hidden;
+}
+.termsofuse ul {
+    float: left;
+    font-size: 10px;
+    color: #999;
+    height: 35px;
+    line-height: 35px;
+}
+.termsofuse ul li {
+    display: inline-block;
+}
+.termsofuse ul li a {
+    border-right: 1px solid #636363;
+    color: #636363;
+    padding: 0 5px;
+}
+footer {
+    margin-bottom: 50px;
+}
+.footer1 {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    display: inline-block;
+    line-height: 20px;
+}
+.footer2 {
+    font-size: 10px;
+    display: inline-block;
+    color: #999;
+    line-height: 20px;
+}
+.footer3 {
+    font-size: 10px;
+    color: #999;
+    line-height: 20px;
 }
